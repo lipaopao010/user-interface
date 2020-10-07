@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>User interface</title>
+  </head>
+  <body>
+    <!-- welcome paragragh -->
+    <h1>Welcome to our page !</h1>
+    <h2>Please upload yor files</h2>
+
+    <!-- first form to submit model file -->
+    <form>
+      <div>
+        <label>Choose <b>MODEL FILE</b> to upload</label>
+        <input type="file" id="modelfile" accept=".csv" />
+      </div>
+
+      <div id="modelmessage">
+        <p>No files currently selected for upload</p>
+      </div>
+    </form>
+
+    <!-- second form to submit blast file -->
+    <form>
+      <div>
+        <label>Choose <b>BLAST FILE</b> to upload</label>
+        <input type="file" id="blastfile" accept=".csv" />
+      </div>
+
+      <div ID="blastmessage">
+        <p>No files currently selected for upload</p>
+      </div>
+    </form>
+    <form>
+      <!-- the button to run program -->
+      <button id="run">Run program</button>
+    </form>
+
+    <!--  Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
